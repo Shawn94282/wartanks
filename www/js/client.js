@@ -1,6 +1,6 @@
 var WIDTH = 1290;
 var HEIGHT = 676; // 633 with spectate mode // 676 disabled spectate
-var socket = io.connect();
+var socket = io.connect('https://rubentd-tanks.herokuapp.com');
 var game = new Game('#arena', WIDTH, HEIGHT, socket);
 var selectedTank = 1;
 var tankName = '';
